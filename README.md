@@ -12,7 +12,7 @@ This is code and documentation relating to the investigation of the "Rule of 4".
 ## Acknowledgments
 
 This project is led by Elena Gazzarrini and managed by Simon Adorf.
-Supported by Marnik Bercx.
+Supported by Rose K. Cersonsky and Marnik Bercx.
 
  - MARVEL INSPIRE FELLOWSHIP (Elena)
  - H2020 MARKETPLACE (Simon)
