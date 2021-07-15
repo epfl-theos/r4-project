@@ -9,7 +9,7 @@ The large files containing SOAP (Smooth Overlap of Atomic Positions) vectors and
 
 - `src/` - Source code.
 - `doc/` - Documentation
-- `img/' - Images
+
 
 ## Acknowledgments
 
