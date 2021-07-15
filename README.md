@@ -3,11 +3,13 @@
 ## About
 
 This is code and documentation relating to the investigation of the "Rule of 4".
+The large files containing SOAP (Smooth Overlap of Atomic Positions) vectors and databases'visualizations can be found on the Materials Cloud archive. 
 
 ## Repository organization
 
 - `src/` - Source code.
 - `doc/` - Documentation
+- `img/' - Images
 
 ## Acknowledgments
 
