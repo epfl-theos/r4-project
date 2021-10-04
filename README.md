@@ -1,8 +1,8 @@
-# Project: Rule of 4
+# Project: Rule of Four
 
 ## About
 
-This is code and documentation relating to the investigation of the "Rule of 4".
+This is code and documentation relating to the investigation of the "Rule of Four".
 The large files containing SOAP (Smooth Overlap of Atomic Positions) vectors and databases'visualizations can be found on the Materials Cloud archive. 
 
 ## Repository organization
