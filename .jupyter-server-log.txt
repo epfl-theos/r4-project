@@ -1,0 +1,392 @@
+[I 13:39:04.558 NotebookApp] Writing notebook server cookie secret to /home/egazzarr/.local/share/jupyter/runtime/notebook_cookie_secret
+[W 2021-12-07 13:39:05.748 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-07 13:39:05.748 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-07 13:39:05.748 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-07 13:39:05.748 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-12-07 13:39:05.760 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2021-12-07 13:39:05.760 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 13:39:05.768 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 13:39:05.770 NotebookApp] Serving notebooks from local directory: /home/egazzarr
+[I 13:39:05.770 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 13:39:05.770 NotebookApp] http://127.0.0.1:58613/?token=728045b6774c4b3332d1ed5ebe6d71c93a83055770914936
+[I 13:39:05.770 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 13:39:05.774 NotebookApp] No web browser found: could not locate runnable browser.
+[C 13:39:05.775 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/egazzarr/.local/share/jupyter/runtime/nbserver-19-open.html
+    Or copy and paste this URL:
+        http://127.0.0.1:58613/?token=728045b6774c4b3332d1ed5ebe6d71c93a83055770914936
+[I 13:39:20.089 NotebookApp] 302 GET /?token=728045b6774c4b3332d1ed5ebe6d71c93a83055770914936 (172.17.0.1) 0.970000ms
+[I 13:39:38.767 NotebookApp] Writing notebook-signing key to /home/egazzarr/.local/share/jupyter/notebook_secret
+[W 13:39:38.771 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[I 13:39:39.524 NotebookApp] Kernel started: d94e5607-d3c7-4456-851c-b009cc75b384, name: python3
+[I 13:41:39.688 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[W 13:41:39.689 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[W 13:42:39.572 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[I 13:42:40.088 NotebookApp] Starting buffering for d94e5607-d3c7-4456-851c-b009cc75b384:9455a85b7ff6457d86dd26bb726c6135
+[I 13:44:40.523 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[W 13:44:40.524 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[I 13:45:03.521 NotebookApp] KernelRestarter: restarting kernel (1/5), keep random ports
+kernel d94e5607-d3c7-4456-851c-b009cc75b384 restarted
+[I 13:46:40.741 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[W 13:46:40.742 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[W 13:50:04.466 NotebookApp] 400 GET /api/contents/example_data/geometric_example_MP.npz?type=file&format=text&_=1638885003517 (172.17.0.1): /home/egazzarr/example_data/geometric_example_MP.npz is not UTF-8 encoded
+[W 13:50:04.466 NotebookApp] /home/egazzarr/example_data/geometric_example_MP.npz is not UTF-8 encoded
+[W 13:50:04.467 NotebookApp] 400 GET /api/contents/example_data/geometric_example_MP.npz?type=file&format=text&_=1638885003517 (172.17.0.1) 3.080000ms referer=http://127.0.0.1:58613/edit/example_data/geometric_example_MP.npz
+[I 13:50:40.547 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[W 13:50:40.548 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[I 13:51:46.121 NotebookApp] Starting buffering for d94e5607-d3c7-4456-851c-b009cc75b384:18a474e362ac46c286a8cf7d00e6162d
+[W 2021-12-07 13:54:33.500 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-07 13:54:33.500 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-07 13:54:33.500 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-07 13:54:33.500 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-12-07 13:54:33.511 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2021-12-07 13:54:33.512 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 13:54:33.522 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 13:54:33.524 NotebookApp] Serving notebooks from local directory: /home/egazzarr
+[I 13:54:33.524 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 13:54:33.524 NotebookApp] http://127.0.0.1:39497/?token=1681047e7c880a6a909ae4c5f2f463992f02dba5bae3678a
+[I 13:54:33.524 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 13:54:33.529 NotebookApp] No web browser found: could not locate runnable browser.
+[C 13:54:33.529 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/egazzarr/.local/share/jupyter/runtime/nbserver-19-open.html
+    Or copy and paste this URL:
+        http://127.0.0.1:39497/?token=1681047e7c880a6a909ae4c5f2f463992f02dba5bae3678a
+[I 13:54:48.215 NotebookApp] 302 GET /?token=1681047e7c880a6a909ae4c5f2f463992f02dba5bae3678a (172.17.0.1) 1.520000ms
+[W 13:54:58.279 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[I 13:54:58.980 NotebookApp] Kernel started: 1982edf3-a387-41ec-8b1a-2fb9ca9a158d, name: python3
+[I 13:55:27.382 NotebookApp] Starting buffering for 1982edf3-a387-41ec-8b1a-2fb9ca9a158d:8d8047040224433bbf62c0595d107100
+[W 13:55:32.972 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[I 13:57:34.009 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[W 13:57:34.011 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[W 2021-12-07 14:12:38.027 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-07 14:12:38.028 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-07 14:12:38.028 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-07 14:12:38.028 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-12-07 14:12:38.039 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2021-12-07 14:12:38.039 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 14:12:38.050 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 14:12:38.052 NotebookApp] Serving notebooks from local directory: /home/egazzarr
+[I 14:12:38.052 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 14:12:38.052 NotebookApp] http://127.0.0.1:60343/?token=b732363a6c6f620167ae90644bdf4b6c7ba5837e2e8ef952
+[I 14:12:38.052 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 14:12:38.057 NotebookApp] No web browser found: could not locate runnable browser.
+[C 14:12:38.057 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/egazzarr/.local/share/jupyter/runtime/nbserver-19-open.html
+    Or copy and paste this URL:
+        http://127.0.0.1:60343/?token=b732363a6c6f620167ae90644bdf4b6c7ba5837e2e8ef952
+[I 14:12:45.129 NotebookApp] 302 GET /?token=b732363a6c6f620167ae90644bdf4b6c7ba5837e2e8ef952 (172.17.0.1) 1.230000ms
+[W 14:12:52.939 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[I 14:12:54.091 NotebookApp] Kernel started: 8b8f97c4-085e-4f4b-9154-3dcab8e8d859, name: python3
+[W 15:35:54.703 NotebookApp] WebSocket ping timeout after 119712 ms.
+[I 15:35:59.709 NotebookApp] Starting buffering for 8b8f97c4-085e-4f4b-9154-3dcab8e8d859:63b493350a634e4e8066828c3a4d601b
+[W 15:54:26.926 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[I 15:54:27.841 NotebookApp] Starting buffering for 8b8f97c4-085e-4f4b-9154-3dcab8e8d859:05a053cb3c124fa385a9283cd02e6ad4
+[W 15:54:31.697 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[I 15:56:32.502 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[W 15:56:32.502 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[I 15:58:32.633 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[W 15:58:32.634 NotebookApp] Notebook src/3.Energies_Pcovr.ipynb is not trusted
+[I 16:00:32.508 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[I 16:02:32.538 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[I 16:04:33.151 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[C 09:10:45.144 NotebookApp] received signal 15, stopping
+[I 09:10:45.184 NotebookApp] Shutting down 1 kernel
+[I 09:10:47.423 NotebookApp] Kernel shutdown: d94e5607-d3c7-4456-851c-b009cc75b384
+[I 09:10:47.425 NotebookApp] Shutting down 0 terminals
+[I 09:10:47.429 NotebookApp] KernelRestarter: restarting kernel (1/5), keep random ports
+[E 09:10:47.429 NotebookApp] Exception in callback <bound method KernelRestarter.poll of <jupyter_client.ioloop.restarter.IOLoopKernelRestarter object at 0x7f4ca73bb450>>
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/ioloop.py", line 905, in _run
+        return self.callback()
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/jupyter_client/restarter.py", line 116, in poll
+        self.kernel_manager.restart_kernel(now=True, newports=newports)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/jupyter_client/manager.py", line 503, in restart_kernel
+        self.shutdown_kernel(now=now, restart=True)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/jupyter_client/manager.py", line 441, in shutdown_kernel
+        self.interrupt_kernel()
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/jupyter_client/manager.py", line 597, in interrupt_kernel
+        raise RuntimeError("Cannot interrupt kernel. No kernel is running!")
+    RuntimeError: Cannot interrupt kernel. No kernel is running!
+[W 2021-12-08 10:06:10.930 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 10:06:10.930 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 10:06:10.930 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 10:06:10.930 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-12-08 10:06:10.942 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2021-12-08 10:06:10.942 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 10:06:10.953 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 10:06:10.955 NotebookApp] Serving notebooks from local directory: /home/egazzarr
+[I 10:06:10.955 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 10:06:10.955 NotebookApp] http://127.0.0.1:60305/?token=382cf1d9a054ab024c105c07ea9891b57226553be2d60671
+[I 10:06:10.955 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 10:06:10.960 NotebookApp] No web browser found: could not locate runnable browser.
+[C 10:06:10.961 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/egazzarr/.local/share/jupyter/runtime/nbserver-19-open.html
+    Or copy and paste this URL:
+        http://127.0.0.1:60305/?token=382cf1d9a054ab024c105c07ea9891b57226553be2d60671
+[W 2021-12-08 11:17:37.092 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:17:37.093 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:17:37.093 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:17:37.093 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-12-08 11:17:37.105 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2021-12-08 11:17:37.105 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 11:17:37.113 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 11:17:37.116 NotebookApp] Serving notebooks from local directory: /home/egazzarr
+[I 11:17:37.116 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 11:17:37.116 NotebookApp] http://127.0.0.1:44695/?token=a37b3a19eca47355ac7aac6da1f75c5d4a4c9785cc2f2daf
+[I 11:17:37.116 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 11:17:37.121 NotebookApp] No web browser found: could not locate runnable browser.
+[C 11:17:37.121 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/egazzarr/.local/share/jupyter/runtime/nbserver-19-open.html
+    Or copy and paste this URL:
+        http://127.0.0.1:44695/?token=a37b3a19eca47355ac7aac6da1f75c5d4a4c9785cc2f2daf
+[W 2021-12-08 11:19:57.343 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:19:57.343 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:19:57.343 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:19:57.343 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-12-08 11:19:57.355 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2021-12-08 11:19:57.355 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 11:19:57.363 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 11:19:57.365 NotebookApp] Serving notebooks from local directory: /home/egazzarr
+[I 11:19:57.365 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 11:19:57.365 NotebookApp] http://127.0.0.1:49815/?token=64ef496b4e45502e34c4400b4d2b77a460c9f04327a16bfc
+[I 11:19:57.365 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 11:19:57.370 NotebookApp] No web browser found: could not locate runnable browser.
+[C 11:19:57.371 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/egazzarr/.local/share/jupyter/runtime/nbserver-19-open.html
+    Or copy and paste this URL:
+        http://127.0.0.1:49815/?token=64ef496b4e45502e34c4400b4d2b77a460c9f04327a16bfc
+[I 11:20:05.311 NotebookApp] 302 GET /?token=64ef496b4e45502e34c4400b4d2b77a460c9f04327a16bfc (172.17.0.1) 1.230000ms
+[W 2021-12-08 11:23:39.420 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:23:39.420 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:23:39.420 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:23:39.420 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-12-08 11:23:39.432 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2021-12-08 11:23:39.432 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 11:23:39.441 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 11:23:39.443 NotebookApp] Serving notebooks from local directory: /home/egazzarr
+[I 11:23:39.443 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 11:23:39.443 NotebookApp] http://127.0.0.1:57547/?token=2dd6da0f095da0260969a382acd8b9b48b3f53525136e594
+[I 11:23:39.443 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 11:23:39.447 NotebookApp] No web browser found: could not locate runnable browser.
+[C 11:23:39.448 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/egazzarr/.local/share/jupyter/runtime/nbserver-20-open.html
+    Or copy and paste this URL:
+        http://127.0.0.1:57547/?token=2dd6da0f095da0260969a382acd8b9b48b3f53525136e594
+[I 11:23:46.956 NotebookApp] 302 GET /?token=2dd6da0f095da0260969a382acd8b9b48b3f53525136e594 (172.17.0.1) 1.100000ms
+[I 11:26:06.425 NotebookApp] Kernel started: 6d4a5070-7291-41e0-ba09-36bec9880afa, name: python3
+[W 2021-12-08 11:27:32.439 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:27:32.440 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:27:32.440 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:27:32.440 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-12-08 11:27:32.452 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2021-12-08 11:27:32.452 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 11:27:32.460 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 11:27:32.462 NotebookApp] Serving notebooks from local directory: /home/egazzarr
+[I 11:27:32.462 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 11:27:32.462 NotebookApp] http://127.0.0.1:58161/?token=31189d36d6cf29c00410947e52cd7348ae1968dab47ece99
+[I 11:27:32.462 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 11:27:32.467 NotebookApp] No web browser found: could not locate runnable browser.
+[C 11:27:32.468 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/egazzarr/.local/share/jupyter/runtime/nbserver-20-open.html
+    Or copy and paste this URL:
+        http://127.0.0.1:58161/?token=31189d36d6cf29c00410947e52cd7348ae1968dab47ece99
+[I 11:27:38.833 NotebookApp] 302 GET /?token=31189d36d6cf29c00410947e52cd7348ae1968dab47ece99 (172.17.0.1) 1.110000ms
+[I 11:27:55.543 NotebookApp] Kernel started: 0030a86f-3641-4a5c-bf66-c87556a2fa15, name: python3
+[W 2021-12-08 11:30:17.252 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:30:17.253 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:30:17.253 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:30:17.253 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-12-08 11:30:17.264 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2021-12-08 11:30:17.265 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 11:30:17.273 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 11:30:17.275 NotebookApp] Serving notebooks from local directory: /home/egazzarr
+[I 11:30:17.275 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 11:30:17.275 NotebookApp] http://127.0.0.1:40307/?token=8e304741e71e0f9b063bc7e8d24c8bf33190d93ed199a1b9
+[I 11:30:17.275 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 11:30:17.280 NotebookApp] No web browser found: could not locate runnable browser.
+[C 11:30:17.280 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/egazzarr/.local/share/jupyter/runtime/nbserver-20-open.html
+    Or copy and paste this URL:
+        http://127.0.0.1:40307/?token=8e304741e71e0f9b063bc7e8d24c8bf33190d93ed199a1b9
+[I 11:30:23.694 NotebookApp] 302 GET /?token=8e304741e71e0f9b063bc7e8d24c8bf33190d93ed199a1b9 (172.17.0.1) 1.100000ms
+[I 11:30:38.633 NotebookApp] Kernel started: 0d7d91c5-b628-4718-bc4d-e1145e08e00e, name: python3
+[I 11:32:38.808 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[I 11:34:38.831 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[W 2021-12-08 11:38:31.595 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:38:31.595 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:38:31.595 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 11:38:31.595 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-12-08 11:38:31.607 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2021-12-08 11:38:31.607 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 11:38:31.616 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 11:38:31.618 NotebookApp] Serving notebooks from local directory: /home/egazzarr
+[I 11:38:31.618 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 11:38:31.618 NotebookApp] http://127.0.0.1:41549/?token=4bef64afac3f4b7b125374f09497610a14344f6a7c5a1a13
+[I 11:38:31.618 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 11:38:31.623 NotebookApp] No web browser found: could not locate runnable browser.
+[C 11:38:31.624 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/egazzarr/.local/share/jupyter/runtime/nbserver-20-open.html
+    Or copy and paste this URL:
+        http://127.0.0.1:41549/?token=4bef64afac3f4b7b125374f09497610a14344f6a7c5a1a13
+[I 11:38:42.738 NotebookApp] 302 GET /?token=4bef64afac3f4b7b125374f09497610a14344f6a7c5a1a13 (172.17.0.1) 1.020000ms
+[I 11:39:05.294 NotebookApp] Kernel started: ae1c33b1-61fa-4d3c-ad0f-a8377973822f, name: python3
+[I 11:43:59.415 NotebookApp] Saving file at /README.md
+[I 11:50:30.477 NotebookApp] Saving file at /README.md
+[I 11:50:35.617 NotebookApp] Saving file at /README.md
+[I 11:51:27.573 NotebookApp] Saving file at /README.md
+[I 11:51:28.762 NotebookApp] Saving file at /README.md
+[I 11:53:05.120 NotebookApp] Saving file at /src/3.Energies_Pcovr.ipynb
+[W 11:53:38.430 NotebookApp] Notebook src/0.Primitivisation_tolerance.ipynb is not trusted
+[I 11:53:39.010 NotebookApp] Kernel started: 2d4944a8-bbc2-4a72-9a68-52fbf2a1c146, name: python3
+[W 11:53:41.198 NotebookApp] Notebook src/1.SOAP_vectors.ipynb is not trusted
+[I 11:53:41.506 NotebookApp] Kernel started: bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086, name: python3
+[I 11:55:39.633 NotebookApp] Saving file at /src/0.Primitivisation_tolerance.ipynb
+[W 11:55:39.633 NotebookApp] Notebook src/0.Primitivisation_tolerance.ipynb is not trusted
+[I 11:55:41.652 NotebookApp] Saving file at /src/1.SOAP_vectors.ipynb
+[W 11:55:41.652 NotebookApp] Notebook src/1.SOAP_vectors.ipynb is not trusted
+[W 11:57:21.442 NotebookApp] Notebook src/2.Global geometric descriptors.ipynb is not trusted
+[I 11:57:21.942 NotebookApp] Kernel started: e1d12934-d271-42e3-b635-ce1a83abb23f, name: python3
+[I 11:57:41.734 NotebookApp] Saving file at /src/1.SOAP_vectors.ipynb
+[W 11:57:41.735 NotebookApp] Notebook src/1.SOAP_vectors.ipynb is not trusted
+[I 11:59:22.005 NotebookApp] Saving file at /src/2.Global geometric descriptors.ipynb
+[W 11:59:22.006 NotebookApp] Notebook src/2.Global geometric descriptors.ipynb is not trusted
+[W 12:00:41.782 NotebookApp] Notebook src/4. Classification_Pcovr.ipynb is not trusted
+[I 12:00:42.375 NotebookApp] Kernel started: 122b4774-e94a-497c-9ff6-a6d6289e33f5, name: python3
+[I 12:02:42.464 NotebookApp] Saving file at /src/4. Classification_Pcovr.ipynb
+[W 12:02:42.466 NotebookApp] Notebook src/4. Classification_Pcovr.ipynb is not trusted
+[I 12:04:42.435 NotebookApp] Saving file at /src/4. Classification_Pcovr.ipynb
+[W 12:04:42.436 NotebookApp] Notebook src/4. Classification_Pcovr.ipynb is not trusted
+[I 12:05:41.604 NotebookApp] Saving file at /src/1.SOAP_vectors.ipynb
+[W 12:05:41.610 NotebookApp] Notebook src/1.SOAP_vectors.ipynb is not trusted
+[I 12:06:27.739 NotebookApp] Starting buffering for 2d4944a8-bbc2-4a72-9a68-52fbf2a1c146:dd4fc5c0f3e14fce86c578250a3cb617
+[I 12:06:42.389 NotebookApp] Saving file at /src/4. Classification_Pcovr.ipynb
+[W 12:06:42.389 NotebookApp] Notebook src/4. Classification_Pcovr.ipynb is not trusted
+[I 12:07:25.582 NotebookApp] Starting buffering for 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[I 12:07:25.593 NotebookApp] Starting buffering for e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[I 12:07:25.595 NotebookApp] Starting buffering for ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[I 12:07:25.596 NotebookApp] Starting buffering for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 12:07:26.505 NotebookApp] KernelRestarter: restarting kernel (1/5), keep random ports
+[I 12:09:41.625 NotebookApp] Saving file at /src/1.SOAP_vectors.ipynb
+[W 12:09:41.626 NotebookApp] Notebook src/1.SOAP_vectors.ipynb is not trusted
+[I 12:11:58.379 NotebookApp] Saving file at /README.md
+[I 12:12:17.412 NotebookApp] Saving file at /README.md
+[I 12:12:18.245 NotebookApp] Saving file at /README.md
+[I 12:12:22.316 NotebookApp] Saving file at /README.md
+[W 13:39:17.649 NotebookApp] Replacing stale connection: ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[W 13:39:17.657 NotebookApp] Replacing stale connection: ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[W 13:39:17.657 NotebookApp] Replacing stale connection: ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[W 13:39:17.658 NotebookApp] Replacing stale connection: ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[W 13:39:17.658 NotebookApp] Replacing stale connection: ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[I 13:39:17.660 NotebookApp] Restoring connection for ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[I 13:39:17.675 NotebookApp] Starting buffering for ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[I 13:39:17.677 NotebookApp] Restoring connection for ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[W 13:39:17.709 NotebookApp] Got events for closed stream None
+[W 13:39:17.728 NotebookApp] Got events for closed stream None
+[W 13:39:17.732 NotebookApp] Got events for closed stream None
+[I 13:39:17.733 NotebookApp] Starting buffering for ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[I 13:39:17.753 NotebookApp] Restoring connection for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 13:39:17.753 NotebookApp] Replaying 1 buffered messages
+[I 13:39:17.766 NotebookApp] Starting buffering for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[W 13:39:17.782 NotebookApp] Replacing stale connection: bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 13:39:17.783 NotebookApp] Restoring connection for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 13:39:17.787 NotebookApp] Saving file at /src/1.SOAP_vectors.ipynb
+[W 13:39:17.787 NotebookApp] Notebook src/1.SOAP_vectors.ipynb is not trusted
+[I 13:39:17.806 NotebookApp] Starting buffering for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 13:39:17.808 NotebookApp] Restoring connection for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 13:39:17.808 NotebookApp] Restoring connection for 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[I 13:39:17.829 NotebookApp] Starting buffering for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 13:39:17.830 NotebookApp] Starting buffering for 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[W 13:39:17.843 NotebookApp] Replacing stale connection: bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 13:39:17.844 NotebookApp] Restoring connection for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 13:39:17.853 NotebookApp] Restoring connection for 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[W 13:39:17.857 NotebookApp] Replacing stale connection: 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[W 13:39:17.862 NotebookApp] Replacing stale connection: 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[W 13:39:17.862 NotebookApp] Replacing stale connection: 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[I 13:39:17.863 NotebookApp] Starting buffering for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 13:39:17.865 NotebookApp] Starting buffering for 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[I 13:39:17.867 NotebookApp] Restoring connection for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 13:39:17.868 NotebookApp] Restoring connection for 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[I 13:39:17.879 NotebookApp] Replaying 1 buffered messages
+[I 13:39:17.886 NotebookApp] Starting buffering for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[W 13:39:17.888 NotebookApp] Got events for closed stream None
+[W 13:39:17.889 NotebookApp] Replacing stale connection: 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[W 13:39:17.892 NotebookApp] zmq message arrived on closed channel
+[W 13:39:17.892 NotebookApp] zmq message arrived on closed channel
+[W 13:39:17.893 NotebookApp] zmq message arrived on closed channel
+[W 13:39:17.896 NotebookApp] zmq message arrived on closed channel
+[W 13:39:17.896 NotebookApp] Replacing stale connection: 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[W 13:39:17.897 NotebookApp] zmq message arrived on closed channel
+[I 13:39:17.904 NotebookApp] Starting buffering for 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[I 13:39:17.905 NotebookApp] Restoring connection for 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[I 13:39:17.929 NotebookApp] Starting buffering for 122b4774-e94a-497c-9ff6-a6d6289e33f5:e6f882dc9f174ba29a9e90bb17ae5eac
+[W 13:39:17.930 NotebookApp] Replacing stale connection: e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[W 13:39:17.930 NotebookApp] Replacing stale connection: e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[W 13:39:17.931 NotebookApp] Replacing stale connection: e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[I 13:39:17.932 NotebookApp] Restoring connection for e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[I 13:39:17.946 NotebookApp] Starting buffering for e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[W 13:39:17.951 NotebookApp] Replacing stale connection: e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[W 13:39:17.951 NotebookApp] Replacing stale connection: e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[I 13:39:17.952 NotebookApp] Restoring connection for e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[I 13:39:17.963 NotebookApp] Replaying 1 buffered messages
+[W 13:39:18.000 NotebookApp] Replacing stale connection: e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[I 13:39:18.093 NotebookApp] Restoring connection for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 13:39:18.159 NotebookApp] Restoring connection for ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[I 13:39:18.166 NotebookApp] Replaying 9 buffered messages
+[I 13:42:00.426 NotebookApp] Saving file at /README.md
+[I 13:51:40.416 NotebookApp] Saving file at /README.md
+[I 13:52:39.222 NotebookApp] Saving file at /README.md
+[W 14:23:18.006 NotebookApp] WebSocket ping timeout after 119994 ms.
+[W 14:23:18.093 NotebookApp] WebSocket ping timeout after 119993 ms.
+[W 14:23:18.160 NotebookApp] WebSocket ping timeout after 119994 ms.
+[I 14:23:23.010 NotebookApp] Starting buffering for e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[I 14:23:23.095 NotebookApp] Starting buffering for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 14:23:23.161 NotebookApp] Starting buffering for ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[I 15:51:51.671 NotebookApp] Restoring connection for ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
+[I 15:51:51.748 NotebookApp] Restoring connection for e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[I 15:51:53.774 NotebookApp] Restoring connection for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 16:03:07.900 NotebookApp] Saving file at /README.md
+[I 16:03:20.578 NotebookApp] Starting buffering for bd1ab987-8ffe-4ea0-8bf4-fb4667d1c086:e7b0f3866bd042339935356c91de55da
+[I 16:03:45.377 NotebookApp] Saving file at /README.md
+[W 16:05:32.493 NotebookApp] 500 PATCH /api/contents/r4_data (172.17.0.1): Unknown error renaming file: r4_data [Errno 16] Device or resource busy: '/home/egazzarr/r4_data'
+[W 16:05:32.495 NotebookApp] Unknown error renaming file: r4_data [Errno 16] Device or resource busy: '/home/egazzarr/r4_data'
+[E 16:05:32.497 NotebookApp] {
+      "Host": "127.0.0.1:41549",
+      "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Accept-Language": "en-GB,en;q=0.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "X-Xsrftoken": "2|5ea50f52|8874767f43bfef7908d948e32f219aa5|1638962405",
+      "X-Requested-With": "XMLHttpRequest",
+      "Content-Length": "18",
+      "Origin": "http://127.0.0.1:41549",
+      "Connection": "keep-alive",
+      "Referer": "http://127.0.0.1:41549/tree",
+      "Cookie": "username-127-0-0-1-49815=\"2|1:0|10:1638962405|24:username-127-0-0-1-49815|44:Y2Y5NmVkOTkyM2EyNDIxMjg3ZTQ4YTNjOTdhNjEzYzk=|696950b51db4fb93a47c4ed1a42544b458ded133944b756c8880fb9c16b30ec1\"; _xsrf=2|5ea50f52|8874767f43bfef7908d948e32f219aa5|1638962405; username-127-0-0-1-57547=\"2|1:0|10:1638962627|24:username-127-0-0-1-57547|44:ZTNiNWI5M2I3ZThjNDFkZTkxZGFhMTQ5Njg5ZDJiZjM=|04310bb702cf4f18ee53caf557b501c35e01716bbaae05acc343dc74287892c9\"; username-127-0-0-1-58161=\"2|1:0|10:1638962858|24:username-127-0-0-1-58161|44:ZDA1YmI3ZmJlMjMzNDQ3ZjhiYWRkNDJmNTcxMWQ2YWQ=|778f8fc794e59d507994115e7d41157626f91460fe5c612e9a1df8c40c62936f\"; username-127-0-0-1-40307=\"2|1:0|10:1638963023|24:username-127-0-0-1-40307|44:YzRhNGJmNWJhOGIyNDY2Njk3ZjU3ODA5ODg0Zjk0MDc=|03a76a80eff3980311fb804daa5c6e2bb5521f2972961a98b78d235fd33e7f26\"; username-127-0-0-1-41549=\"2|1:0|10:1638963522|24:username-127-0-0-1-41549|44:Zjk3NGNlZDFhNmRiNDYxN2JmMGM5MWI0YmExMjI1YjQ=|8bc8981ac22206b74b72427326a4595c6f8a34cc6fcaba293947b1ed23905866\"",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin"
+    }
+[E 16:05:32.497 NotebookApp] 500 PATCH /api/contents/r4_data (172.17.0.1) 23867.000000ms referer=http://127.0.0.1:41549/tree
+[I 16:05:32.513 NotebookApp] Starting buffering for e1d12934-d271-42e3-b635-ce1a83abb23f:6f6b9949a21942319563c970d82cb6bb
+[I 16:05:32.514 NotebookApp] Starting buffering for ae1c33b1-61fa-4d3c-ad0f-a8377973822f:2b7aa647dcc74493b1134387246cc39f
