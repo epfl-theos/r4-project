@@ -12,7 +12,7 @@ The large files containing SOAP (Smooth Overlap of Atomic Positions) vectors and
     - `src/2. Global geometric descriptors` - Calculation of inherited symmetries (point groups) and packing parameters. 
     - `src/3. Energies_PcovR` - Principal Covariates Regression analysis regressed on formation energies per atom. 
     - `src/4. Classification_PCovR` - Principal Covariates Regression analysis regressed on Random Forest classification probabilities. 
-- `example_data/` - A reduced set of the [Materials Project](https://materialsproject.org/) database to import in the jupyter notebooks. 
+- `example_data/` - A reduced set of the [Materials Project](https://materialsproject.org/) database to import in the jupyter notebooks. The json file can be directly run on [Chemiscope](https://chemiscope.org/). 
 - `requirements.txt` - Requirements of the correct packages' versions. 
 
 ## How to run the code
