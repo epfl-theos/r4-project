@@ -1,0 +1,20 @@
+[I 16:29:34.212 NotebookApp] Writing notebook server cookie secret to /home/egazzarr/.local/share/jupyter/runtime/notebook_cookie_secret
+[W 2021-12-08 16:29:36.161 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 16:29:36.161 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 16:29:36.161 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-12-08 16:29:36.161 LabApp] 'custom_display_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-12-08 16:29:36.173 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2021-12-08 16:29:36.173 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 16:29:36.184 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 16:29:36.186 NotebookApp] Serving notebooks from local directory: /home/egazzarr
+[I 16:29:36.186 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 16:29:36.186 NotebookApp] http://127.0.0.1:53891/?token=02be6d1545480c171d574fdb43667039c4c2a06f91e30875
+[I 16:29:36.186 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 16:29:36.192 NotebookApp] No web browser found: could not locate runnable browser.
+[C 16:29:36.192 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/egazzarr/.local/share/jupyter/runtime/nbserver-20-open.html
+    Or copy and paste this URL:
+        http://127.0.0.1:53891/?token=02be6d1545480c171d574fdb43667039c4c2a06f91e30875
+[I 16:30:21.962 NotebookApp] 302 GET /?token=02be6d1545480c171d574fdb43667039c4c2a06f91e30875 (172.17.0.1) 1.890000ms
