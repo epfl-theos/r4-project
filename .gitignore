@@ -1,0 +1,5 @@
+.cache/*
+.ipython/*
+.jupyter-server-log.txt
+.jupyter/*
+.local/share/*
