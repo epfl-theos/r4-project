@@ -1,6 +1,7 @@
+*/.ipynb_checkpoints/*
+*/__pycache__/*
 .cache/*
 .config/*
-*/.ipynb_checkpoints/*
 .ipython/*
 .jupyter-server-log.txt
 .jupyter/*
