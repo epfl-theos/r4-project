@@ -27,7 +27,7 @@ repo2docker https://github.com/epfl-theos/r4-project.git
 To run with complete data from the [Materials Cloud Archive](https://archive.materialscloud.org/) repository, fork the whole current repository (r4-project/) on your local machine, download the Materials Cloud data folder and rename it 'r4-data'. Then run the following:
 
 ```console
-repo2docker --volume=your_abs_path/r4-data/:your_abs_path/r4data/ -E r4-project/.
+repo2docker --volume=/abs/path/to/r4data:r4data/ -E r4-project/.
 ```
 This should open a jupyter notebook on the web where all dependencies are already installed, and the data folders can be accessed by changing the paths in the single notebooks.
 
