@@ -13,13 +13,13 @@ __all__ = [
 @dataclass
 class R4Data:
 
-    structures: Path
-    data: Path
-    geo: Path
-    soap: Path
-    soap_red: Path
-    chem: Path
-    chem_red: Path
+    structures: Path  # cif-structure files
+    data: Path  # only for the MP (contains energies)
+    geo: Path  # geometric npz, distribution of radii, alpha-parameters, etc.
+    soap: Path  # soap vectors
+    soap_red: Path  # soap vectors (reduced feature selction, FPS)
+    chem: Path  # chemiscope file
+    chem_red: Path  # chemiscope file (random sub-selection of 30,000)
 
     @classmethod
     def from_prefix(cls, prefix: Path):
