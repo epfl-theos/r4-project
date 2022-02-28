@@ -31,6 +31,17 @@ repo2docker --volume=/abs/path/to/r4data:r4data/ -E r4-project/.
 ```
 This should open a jupyter notebook on the web where all dependencies are already installed, and the data folders can be accessed by changing the paths in the single notebooks.
 
+## How to commit to this repository
+
+Before making commits, make sure to install the pre-commit hooks by running the following commands within the repository root directory:
+
+```console
+pip install pre-commit==2.15.0
+pre-commit install
+```
+
+This will run the pre-commit hooks on each commit ensuring that certain code standards are upheld.
+
 ## Acknowledgments
 
 This project is led by Elena Gazzarrini and managed by Simon Adorf.
