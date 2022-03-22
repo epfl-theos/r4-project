@@ -9,7 +9,7 @@ mendeleev==0.7.0
 numpy==1.20.3
 pandas==1.2.4
 pymatgen==2022.0.5
-rascal@git+https://github.com/cosmo-epfl/librascal.git
+rascal@git+https://github.com/cosmo-epfl/librascal.git@a8feed397bba6fa260cb19e6c204f317328ddf29
 scipy==1.6.2
 seaborn==0.11.1
 seekpath==1.9.7
