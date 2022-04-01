@@ -8,13 +8,13 @@ The large files containing SOAP (Smooth Overlap of Atomic Positions) vectors and
 ## Repository organization
 
 - `src/` - Source code.
-    - `src/0.Rule4_hist` - Generation of histograms to represent the Rule of Four.   
+    - `src/0.Rule4_hist` - Generation of histograms to represent the Rule of Four.
     - `src/1.SOAP_vectors` - Demo of SOAP vectors generation. No need to run it (if you do with the complete datasets, you might fall into RAM issues), as all the files named \*SOAP\*.npz contain the averaged (per structure) SOAP vectors already (n_rows=n_frames, n_columns~10^5).
     - `src/2. Global geometric descriptors` - Calculation of inherited symmetries (point groups) and packing parameters.
     - `src/3. Energies_PcovR` - Principal Covariates Regression analysis regressed on formation energies per atom.
     - `src/4. Classification_PCovR` - Principal Covariates Regression analysis regressed on Random Forest classification probabilities.
-    - `data.py` - data class to run noteboks with production or with example data. 
-    - `modules.ipynb` - python modules that jupyter notebooks run.  
+    - `data.py` - data class to run noteboks with production or with example data.
+    - `modules.ipynb` - python modules that jupyter notebooks run.
 - `example_data/` - A reduced set of the [Materials Project](https://materialsproject.org/) database to import in the jupyter notebooks. The .json files can be directly run on [Chemiscope](https://chemiscope.org/) (color according to the 'magic probability' label and with the 'seismic' palette).
 
 ## How to run the code
