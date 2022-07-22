@@ -1,5 +1,8 @@
+import re
+
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 import seaborn as sns
 from ase import Atoms
 from mendeleev import element
@@ -141,215 +144,218 @@ def non_magic_four(num_atoms):
     return idx
 
 
-def inh_symm(data_frame):
-    counts = data_frame.value_counts().to_frame().reindex(PG_LIST_ORDER).fillna(0)
-    for i in range(len(data_frame)):
-        elem = data_frame.iloc[i]
-        if elem == "m" or elem == "2" or elem == "3" or elem == "1_":
-            counts.loc["1"] += 1
-        elif elem == "222" or elem == "4" or elem == "4_":
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-        elif elem == "mm2":
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-            counts.loc["m"] += 1
-        elif elem == "2/m":
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-            counts.loc["m"] += 1
-            counts.loc["1_"] += 1
-        elif elem == "4_2m":
-            counts.loc["4"] += 1
-            counts.loc["mm2"] += 1
-            counts.loc["222"] += 1
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-            counts.loc["m"] += 1
-        elif elem == "4mm":
-            counts.loc["4"] += 1
-            counts.loc["mm2"] += 1
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-            counts.loc["m"] += 1
-        elif elem == "422":
-            counts.loc["4"] += 1
-            counts.loc["222"] += 1
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-        elif elem == "4/m":
-            counts.loc["4"] += 1
-            counts.loc["2/m"] += 1
-            counts.loc["4_"] += 1
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-            counts.loc["m"] += 1
-            counts.loc["1_"] += 1
-        elif elem == "mmm":
-            counts.loc["222"] += 1
-            counts.loc["2/m"] += 1
-            counts.loc["mm2"] += 1
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-            counts.loc["m"] += 1
-            counts.loc["1_"] += 1
-        elif elem == "4/mmm":
-            counts.loc["4_2m"] += 1
-            counts.loc["4mm"] += 1
-            counts.loc["422"] += 1
-            counts.loc["4/m"] += 1
-            counts.loc["mmm"] += 1
-            counts.loc["222"] += 1
-            counts.loc["4"] += 1
-            counts.loc["4_"] += 1
-            counts.loc["2/m"] += 1
-            counts.loc["mm2"] += 1
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-            counts.loc["m"] += 1
-            counts.loc["1_"] += 1
-        elif elem == "3m" or elem == "6_":
-            counts.loc["1"] += 1
-            counts.loc["3"] += 1
-            counts.loc["m"] += 1
-        elif elem == "32" or elem == "6":
-            counts.loc["1"] += 1
-            counts.loc["3"] += 1
-            counts.loc["2"] += 1
-        elif elem == "3_":
-            counts.loc["1"] += 1
-            counts.loc["3"] += 1
-            counts.loc["1_"] += 1
-        elif elem == "3_m":
-            counts.loc["3_"] += 1
-            counts.loc["32"] += 1
-            counts.loc["3m"] += 1
-            counts.loc["2/m"] += 1
-            counts.loc["1_"] += 1
-            counts.loc["1"] += 1
-            counts.loc["3"] += 1
-            counts.loc["m"] += 1
-            counts.loc["2"] += 1
-        elif elem == "6/m":
-            counts.loc["3_"] += 1
-            counts.loc["6_"] += 1
-            counts.loc["6"] += 1
-            counts.loc["2/m"] += 1
-            counts.loc["1_"] += 1
-            counts.loc["1"] += 1
-            counts.loc["3"] += 1
-            counts.loc["m"] += 1
-            counts.loc["2"] += 1
-        elif elem == "622":
-            counts.loc["222"] += 1
-            counts.loc["6"] += 1
-            counts.loc["32"] += 1
-            counts.loc["1"] += 1
-            counts.loc["3"] += 1
-            counts.loc["2"] += 1
-        elif elem == "6_m2":
-            counts.loc["32"] += 1
-            counts.loc["6_"] += 1
-            counts.loc["3m"] += 1
-            counts.loc["mm2"] += 1
-            counts.loc["1"] += 1
-            counts.loc["3"] += 1
-            counts.loc["m"] += 1
-            counts.loc["2"] += 1
-        elif elem == "6mm":
-            counts.loc["3_"] += 1
-            counts.loc["6"] += 1
-            counts.loc["2/m"] += 1
-            counts.loc["1_"] += 1
-            counts.loc["1"] += 1
-            counts.loc["3"] += 1
-            counts.loc["m"] += 1
-            counts.loc["2"] += 1
-        elif elem == "6/mmm":
-            counts.loc["6mm"] += 1
-            counts.loc["6_m2"] += 1
-            counts.loc["3_m"] += 1
-            counts.loc["622"] += 1
-            counts.loc["6/m"] += 1
-            counts.loc["mmm"] += 1
-            counts.loc["222"] += 1
-            counts.loc["2/m"] += 1
-            counts.loc["mm2"] += 1
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-            counts.loc["m"] += 1
-            counts.loc["1_"] += 1
-            counts.loc["3"] += 1
-            counts.loc["3m"] += 1
-            counts.loc["32"] += 1
-            counts.loc["3_"] += 1
-            counts.loc["6_"] += 1
-            counts.loc["6"] += 1
+def inh_symm(pg_list):
+    counts = pg_list.value_counts().reindex(PG_LIST_ORDER, fill_value=0).to_dict()
+    for pg in pg_list:
+        if pg == "m" or pg == "2" or pg == "3" or pg == "1_":
+            counts["1"] += 1
+        elif pg == "222" or pg == "4" or pg == "4_":
+            counts["1"] += 1
+            counts["2"] += 1
+        elif pg == "mm2":
+            counts["1"] += 1
+            counts["2"] += 1
+            counts["m"] += 1
+        elif pg == "2/m":
+            counts["1"] += 1
+            counts["2"] += 1
+            counts["m"] += 1
+            counts["1_"] += 1
+        elif pg == "4_2m":
+            counts["4"] += 1
+            counts["mm2"] += 1
+            counts["222"] += 1
+            counts["1"] += 1
+            counts["2"] += 1
+            counts["m"] += 1
+        elif pg == "4mm":
+            counts["4"] += 1
+            counts["mm2"] += 1
+            counts["1"] += 1
+            counts["2"] += 1
+            counts["m"] += 1
+        elif pg == "422":
+            counts["4"] += 1
+            counts["222"] += 1
+            counts["1"] += 1
+            counts["2"] += 1
+        elif pg == "4/m":
+            counts["4"] += 1
+            counts["2/m"] += 1
+            counts["4_"] += 1
+            counts["1"] += 1
+            counts["2"] += 1
+            counts["m"] += 1
+            counts["1_"] += 1
+        elif pg == "mmm":
+            counts["222"] += 1
+            counts["2/m"] += 1
+            counts["mm2"] += 1
+            counts["1"] += 1
+            counts["2"] += 1
+            counts["m"] += 1
+            counts["1_"] += 1
+        elif pg == "4/mmm":
+            counts["4_2m"] += 1
+            counts["4mm"] += 1
+            counts["422"] += 1
+            counts["4/m"] += 1
+            counts["mmm"] += 1
+            counts["222"] += 1
+            counts["4"] += 1
+            counts["4_"] += 1
+            counts["2/m"] += 1
+            counts["mm2"] += 1
+            counts["1"] += 1
+            counts["2"] += 1
+            counts["m"] += 1
+            counts["1_"] += 1
+        elif pg == "3m" or pg == "6_":
+            counts["1"] += 1
+            counts["3"] += 1
+            counts["m"] += 1
+        elif pg == "32" or pg == "6":
+            counts["1"] += 1
+            counts["3"] += 1
+            counts["2"] += 1
+        elif pg == "3_":
+            counts["1"] += 1
+            counts["3"] += 1
+            counts["1_"] += 1
+        elif pg == "3_m":
+            counts["3_"] += 1
+            counts["32"] += 1
+            counts["3m"] += 1
+            counts["2/m"] += 1
+            counts["1_"] += 1
+            counts["1"] += 1
+            counts["3"] += 1
+            counts["m"] += 1
+            counts["2"] += 1
+        elif pg == "6/m":
+            counts["3_"] += 1
+            counts["6_"] += 1
+            counts["6"] += 1
+            counts["2/m"] += 1
+            counts["1_"] += 1
+            counts["1"] += 1
+            counts["3"] += 1
+            counts["m"] += 1
+            counts["2"] += 1
+        elif pg == "622":
+            counts["222"] += 1
+            counts["6"] += 1
+            counts["32"] += 1
+            counts["1"] += 1
+            counts["3"] += 1
+            counts["2"] += 1
+        elif pg == "6_m2":
+            counts["32"] += 1
+            counts["6_"] += 1
+            counts["3m"] += 1
+            counts["mm2"] += 1
+            counts["1"] += 1
+            counts["3"] += 1
+            counts["m"] += 1
+            counts["2"] += 1
+        elif pg == "6mm":
+            counts["3_"] += 1
+            counts["6"] += 1
+            counts["2/m"] += 1
+            counts["1_"] += 1
+            counts["1"] += 1
+            counts["3"] += 1
+            counts["m"] += 1
+            counts["2"] += 1
+        elif pg == "6/mmm":
+            counts["6mm"] += 1
+            counts["6_m2"] += 1
+            counts["3_m"] += 1
+            counts["622"] += 1
+            counts["6/m"] += 1
+            counts["mmm"] += 1
+            counts["222"] += 1
+            counts["2/m"] += 1
+            counts["mm2"] += 1
+            counts["1"] += 1
+            counts["2"] += 1
+            counts["m"] += 1
+            counts["1_"] += 1
+            counts["3"] += 1
+            counts["3m"] += 1
+            counts["32"] += 1
+            counts["3_"] += 1
+            counts["6_"] += 1
+            counts["6"] += 1
 
-        elif elem == "23":
-            counts.loc["3"] += 1
-            counts.loc["222"] += 1
-            counts.loc["2"] += 1
-            counts.loc["1"] += 1
-        elif elem == "4_3m":
-            counts.loc["4_2m"] += 1
-            counts.loc["23"] += 1
-            counts.loc["3m"] += 1
-            counts.loc["4"] += 1
-            counts.loc["mm2"] += 1
-            counts.loc["222"] += 1
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-            counts.loc["m"] += 1
-            counts.loc["3"] += 1
-        elif elem == "432":
-            counts.loc["422"] += 1
-            counts.loc["23"] += 1
-            counts.loc["32"] += 1
-            counts.loc["4"] += 1
-            counts.loc["222"] += 1
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-            counts.loc["3"] += 1
-        elif elem == "m_3":
-            counts.loc["mmm"] += 1
-            counts.loc["23"] += 1
-            counts.loc["3_"] += 1
-            counts.loc["2/m"] += 1
-            counts.loc["mm2"] += 1
-            counts.loc["m"] += 1
-            counts.loc["222"] += 1
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-            counts.loc["3"] += 1
-            counts.loc["1_"] += 1
+        elif pg == "23":
+            counts["3"] += 1
+            counts["222"] += 1
+            counts["2"] += 1
+            counts["1"] += 1
+        elif pg == "4_3m":
+            counts["4_2m"] += 1
+            counts["23"] += 1
+            counts["3m"] += 1
+            counts["4"] += 1
+            counts["mm2"] += 1
+            counts["222"] += 1
+            counts["1"] += 1
+            counts["2"] += 1
+            counts["m"] += 1
+            counts["3"] += 1
+        elif pg == "432":
+            counts["422"] += 1
+            counts["23"] += 1
+            counts["32"] += 1
+            counts["4"] += 1
+            counts["222"] += 1
+            counts["1"] += 1
+            counts["2"] += 1
+            counts["3"] += 1
+        elif pg == "m_3":
+            counts["mmm"] += 1
+            counts["23"] += 1
+            counts["3_"] += 1
+            counts["2/m"] += 1
+            counts["mm2"] += 1
+            counts["m"] += 1
+            counts["222"] += 1
+            counts["1"] += 1
+            counts["2"] += 1
+            counts["3"] += 1
+            counts["1_"] += 1
 
-        elif elem == "m3_m":
-            counts.loc["4_3m"] += 1
-            counts.loc["432"] += 1
-            counts.loc["m_3"] += 1
-            counts.loc["3_m"] += 1
-            counts.loc["4/mmm"] += 1
-            counts.loc["23"] += 1
-            counts.loc["4_2m"] += 1
-            counts.loc["4mm"] += 1
-            counts.loc["422"] += 1
-            counts.loc["4/m"] += 1
-            counts.loc["mmm"] += 1
-            counts.loc["222"] += 1
-            counts.loc["4"] += 1
-            counts.loc["4_"] += 1
-            counts.loc["2/m"] += 1
-            counts.loc["mm2"] += 1
-            counts.loc["1"] += 1
-            counts.loc["2"] += 1
-            counts.loc["m"] += 1
-            counts.loc["1_"] += 1
-            counts.loc["3_"] += 1
-            counts.loc["32"] += 1
-            counts.loc["3m"] += 1
-            counts.loc["3"] += 1
-    return counts
+        elif pg == "m3_m":
+            counts["4_3m"] += 1
+            counts["432"] += 1
+            counts["m_3"] += 1
+            counts["3_m"] += 1
+            counts["4/mmm"] += 1
+            counts["23"] += 1
+            counts["4_2m"] += 1
+            counts["4mm"] += 1
+            counts["422"] += 1
+            counts["4/m"] += 1
+            counts["mmm"] += 1
+            counts["222"] += 1
+            counts["4"] += 1
+            counts["4_"] += 1
+            counts["2/m"] += 1
+            counts["mm2"] += 1
+            counts["1"] += 1
+            counts["2"] += 1
+            counts["m"] += 1
+            counts["1_"] += 1
+            counts["3_"] += 1
+            counts["32"] += 1
+            counts["3m"] += 1
+            counts["3"] += 1
+    return pd.Series(counts).reindex(PG_LIST_ORDER)
+
+
+def latexify_hermann_mauguin(name):
+    return "$" + re.sub("(.)_", r"\\overline{\g<1>}", name) + "$"
 
 
 def get_pymatgen(atoms, cls=None):
