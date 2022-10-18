@@ -17,9 +17,9 @@ class R4Data:
     data: Path  # only for the MP (contains energies)
     geo: Path  # geometric npz, distribution of radii, alpha-parameters, etc.
     soap: Path  # soap vectors
-    soap_red: Path  # soap vectors (reduced feature selction, FPS)
+    # soap_red: Path  # soap vectors (reduced feature selction, FPS)
     chem: Path  # chemiscope file
-    chem_red: Path  # chemiscope file (random sub-selection of 30,000)
+    # chem_red: Path  # chemiscope file (random sub-selection of 30,000)
 
     @classmethod
     def from_prefix(cls, prefix: Path):
@@ -27,10 +27,10 @@ class R4Data:
             structures=prefix / "structures.xyz",
             data=prefix / "data.zip",
             geo=prefix / "geo.npz",
-            soap=prefix / "soap.npz",
-            soap_red=prefix / "soap_red.npz",
+            soap=prefix / "power_spectrum_pca_30-species.npy",
+            # soap_red=prefix / "soap_red.npz",
             chem=prefix / "chem.json.gz",
-            chem_red=prefix / "chem_red.json.gz",
+            # chem_red=prefix / "chem_red.json.gz",
         )
 
 
