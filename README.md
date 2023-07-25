@@ -26,7 +26,7 @@ The large files containing SOAP (Smooth Overlap of Atomic Positions) vectors and
 
 ## How to run the code
 
-The dependencies for the source code are speciefied in the `requirements.txt` and in the `environment.yml` files.
+The dependencies for the source code are specified in the `requirements.txt` and in the `environment.yml` files.
 
 The easiest way to create a computational environment to run the provided source code is to use [repo2docker](https://repo2docker.readthedocs.io/):
 
