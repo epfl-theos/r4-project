@@ -12,7 +12,7 @@ The large files containing SOAP (Smooth Overlap of Atomic Positions) vectors and
 
 - `src/` - Source code.
     - `src/0.Rule4_hist.ipynb` - Generation of histograms to represent the Rule of Four.
-    - `src/1.SOAP_vectors.ipynb` - Demo of SOAP vectors generation. No need to run it (if you do with the complete datasets, you might fall into RAM issues), as all the files named \*SOAP\*.npz contain the averaged (per structure) SOAP vectors already (n_rows=n_frames, n_columns~10^5).
+    - `src/1.SOAP_vectors.ipynb` - Demo of SOAP vectors generation. No need to run it (if you do with the complete datasets, you might have RAM issues), as all the files named \*SOAP\*.npz contain the averaged (per structure) SOAP vectors already (n_rows=n_frames, n_columns~10^5).
     - `src/2. Global geometric descriptors.ipynb` - Calculation of inherited symmetries (point groups) and packing parameters.
     - `src/3. Energies_PcovR.ipynb` - Principal Covariates Regression analysis regressed on formation energies per atom.
     - `src/4. Classification_RF_species-invariant.ipynb` - Principal Covariates Regression analysis regressed on Random Forest classification probabilities.
