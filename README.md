@@ -35,7 +35,7 @@ To run with the reduced data from the `example_data/` repository:
 ```console
 repo2docker https://github.com/epfl-theos/r4-project.git
 ```
-To run with complete data from the [Materials Cloud Archive](https://archive.materialscloud.org/record/2023.104) submission, fork the whole current repository (r4-project/) on your local machine, download the Materials Cloud data folder and rename it 'r4-data'. Then run the following:
+To run with complete data from the [Materials Cloud Archive](https://archive.materialscloud.org/record/2023.104) submission, clone the whole current repository (r4-project/) on your local machine, download the Materials Cloud data folder and rename it 'r4-data'. Then run the following:
 
 ```console
 repo2docker --volume=/abs/path/to/r4data:r4data/ -E r4-project/.
