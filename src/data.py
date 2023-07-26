@@ -4,7 +4,7 @@ from pathlib import Path
 import click
 
 __all__ = [
-    "DATA_3DCD",
+    "DATA_MC3D",
     "DATA_MP",
     "R4Data",
 ]
@@ -12,7 +12,6 @@ __all__ = [
 
 @dataclass
 class R4Data:
-
     structures: Path  # cif-structure files
     data: Path  # only for the MP (contains energies)
     geo: Path  # geometric npz, distribution of radii, alpha-parameters, etc.
@@ -35,21 +34,20 @@ class R4Data:
         )
 
 
-if Path("../r4data").exists():
+if Path("../../r4data").exists():
     print(click.style("PRODUCTION DATA PRESENT", fg="green"))
-    DATA_3DCD = R4Data.from_prefix(Path("../r4data/3DCD").resolve())
+    DATA_MC3D = R4Data.from_prefix(Path("../r4data/MC3D").resolve())
     DATA_MP = R4Data.from_prefix(Path("../r4data/MP").resolve())
-    if not DATA_3DCD.structures.exists():
+    if not DATA_MC3D.structures.exists():
         print(
             click.style(
-                "But cannot retrieve 3DCD .xyz structural files because the "
-                "database is not public yet. To get access to the files, "
-                "please email Simon Adorf at simon.adorf@epfl.ch. Using "
+                "But cannot retrieve MC3D .xyz structural files because the "
+                "experimental structures can not be released due to licensing constraints. Using "
                 "example MP data instead.",
                 fg="yellow",
             ),
         )
-        DATA_3DCD = R4Data.from_prefix(Path("../example_data/").resolve())
+        DATA_MC3D = R4Data.from_prefix(Path("../example_data/").resolve())
 else:
     print(
         click.style(
@@ -58,7 +56,7 @@ else:
             fg="yellow",
         )
     )
-    DATA_3DCD = R4Data.from_prefix(Path("../example_data/").resolve())
+    DATA_MC3D = R4Data.from_prefix(Path("../example_data/").resolve())
     DATA_MP = R4Data.from_prefix(Path("../example_data/").resolve())
-    DATA_3DCD.soap_red = DATA_3DCD.soap
+    DATA_MC3D.soap_red = DATA_MC3D.soap
     DATA_MP.soap_red = DATA_MP.soap

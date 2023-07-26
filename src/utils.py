@@ -554,7 +554,6 @@ def get_r(list):
 
 
 def comp_classif(X, Y):
-
     models = [
         "Logistic Regression",
         "Support Vector Machine",
