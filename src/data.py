@@ -12,7 +12,6 @@ __all__ = [
 
 @dataclass
 class R4Data:
-
     structures: Path  # cif-structure files
     data: Path  # only for the MP (contains energies)
     geo: Path  # geometric npz, distribution of radii, alpha-parameters, etc.

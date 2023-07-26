@@ -19,9 +19,9 @@ The large files containing SOAP (Smooth Overlap of Atomic Positions) vectors and
     - `src/5. Classification-comparison.ipynb` - Comparison of efficiency of various classification algorithms.
     - `data.py` - data class to run noteboks with production or with example data.
     - `modules.ipynb` - python modules that jupyter notebooks run.
-    - `contants.py`, `point_groups.json` and `utils.py` are functions to run the point group analysis in notebook 2. 
-    - `mp_symms` and `exp_symms` are being used to prove the RoF existence by testing how the primitive unit cells are generated. This refers to the unpublished .xyz structure data in the case of the MC3D database. 
-    - `test_indices_all` and `train_indices_all` refer to the last part of the classification analyses in notebooks 4 and 5. 
+    - `contants.py`, `point_groups.json` and `utils.py` are functions to run the point group analysis in notebook 2.
+    - `mp_symms` and `exp_symms` are being used to prove the RoF existence by testing how the primitive unit cells are generated. This refers to the unpublished .xyz structure data in the case of the MC3D database.
+    - `test_indices_all` and `train_indices_all` refer to the last part of the classification analyses in notebooks 4 and 5.
 - `example_data/` - A reduced set of the [Materials Project](https://materialsproject.org/) database to import in the jupyter notebooks. The .json files can be directly run on [Chemiscope](https://chemiscope.org/) (color according to the 'magic probability' label and with the 'seismic' palette).
 
 ## How to run the code
@@ -43,9 +43,9 @@ repo2docker --volume=/abs/path/to/r4data:r4data/ -E r4-project/.
 This should open a jupyter notebook on the web where all dependencies are already installed, and the data folders can be accessed by changing the paths in the single notebooks.
 
 
-## Reading the pre-existing `.npz` files 
+## Reading the pre-existing `.npz` files
 
-The `.npz` files contain information about each structure and can be opened with a dataclass, as specified in `src/data.py`. 
+The `.npz` files contain information about each structure and can be opened with a dataclass, as specified in `src/data.py`.
 
 ```
 @dataclass
@@ -61,8 +61,8 @@ class R4Data:
         return cls(
             structures=prefix / "structures.xyz",
             data=prefix / "data.zip",
-            geo=prefix / "geo.npz", 
-            soap=prefix / "soap.npz",           
+            geo=prefix / "geo.npz",
+            soap=prefix / "soap.npz",
             chem=prefix / "chem.json.gz"
         )
 ```
