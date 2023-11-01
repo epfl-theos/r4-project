@@ -36,8 +36,8 @@ class R4Data:
 
 if Path("../../r4data").exists():
     print(click.style("PRODUCTION DATA PRESENT", fg="green"))
-    DATA_MC3D = R4Data.from_prefix(Path("../r4data/MC3D").resolve())
-    DATA_MP = R4Data.from_prefix(Path("../r4data/MP").resolve())
+    DATA_MC3D = R4Data.from_prefix(Path("../../r4data/MC3D").resolve())
+    DATA_MP = R4Data.from_prefix(Path("../../r4data/MP").resolve())
     if not DATA_MC3D.structures.exists():
         print(
             click.style(
